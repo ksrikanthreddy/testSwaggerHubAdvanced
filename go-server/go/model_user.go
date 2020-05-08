@@ -22,7 +22,5 @@ type User struct {
 
 	Password string `json:"password"`
 
-	Test string `json:"test,omitempty"`
-
 	CreatedDate time.Time `json:"createdDate"`
 }

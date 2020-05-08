@@ -17,7 +17,7 @@ tags:
 schemes:
 - "https"
 paths:
-  /user:
+  /userTest:
     get:
       tags:
       - "HPE User"
@@ -107,9 +107,6 @@ definitions:
       password:
         type: "string"
         example: "password"
-      test:
-        type: "string"
-        example: "test"
       createdDate:
         type: "string"
         format: "date-time"
@@ -117,6 +114,5 @@ definitions:
     example:
       password: "password"
       createdDate: "2016-08-29T09:12:33.001+0000"
-      test: "test"
       id: "d290f1ee-6c54-4b01-90e6-d701748f0851"
       username: "User1"
