@@ -14,4 +14,6 @@ type ErrorModel struct {
 	Code int32 `json:"code"`
 
 	Message string `json:"message"`
+
+	Type_ string `json:"type,omitempty"`
 }
