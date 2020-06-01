@@ -1,3 +1,3 @@
 # testSwaggerHubAdvanced
 
-Updated for automatic PR
+Updated for automatic PR.
