@@ -28,7 +28,7 @@ jobs:
           draft: false
           request-to-parent: true
           base: master
-          branch: newpr
+          branch: new
       - name: Check outputs
         run: |
           echo "Pull Request Number - ${{ env.PULL_REQUEST_NUMBER }}"
