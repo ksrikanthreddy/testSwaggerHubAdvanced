@@ -23,10 +23,6 @@ jobs:
 
             [1]: https://github.com/peter-evans/create-pull-request
           labels: report, automated pr
-          assignees: ksrikanthreddy
-          reviewers: ksrikanthreddy
-          team-reviewers: owners, maintainers
-          milestone: 1
           draft: false
           branch: example-patches
           request-to-parent: false
