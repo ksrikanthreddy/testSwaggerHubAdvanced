@@ -15,8 +15,7 @@ jobs:
           ref: master
       - name: Create PR Branch
         run: |
-          curl -X POST https://api.github.com/repos/ksrikanthreddy/testSwaggerHubAdvanced/pulls
-     -d "{\"title\":\"my_login\",\"body\":\"my_password\",\"head\":\"new\",\"base\":\"master\"}"
+          curl -X POST https://api.github.com/repos/ksrikanthreddy/testSwaggerHubAdvanced/pulls -d "{\"title\":\"my_login\",\"body\":\"my_password\",\"head\":\"new\",\"base\":\"master\"}"
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v2
