@@ -13,10 +13,6 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: master
-      - name: Create PR Branch
-        run: |
-          git checkout -b newpr
-          git fetch origin master:master
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v2
@@ -30,7 +26,7 @@ jobs:
             New SwaggerHub chagnes
           labels: report, automated pr
           draft: false
-          request-to-parent: true
+          request-to-parent: false
           base: master
           branch: newpr
       - name: Check outputs
