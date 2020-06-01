@@ -26,7 +26,7 @@ jobs:
             New SwaggerHub chagnes
           labels: report, automated pr
           draft: false
-          request-to-parent: false
+          request-to-parent: true
           base: master
           branch: newpr
       - name: Check outputs
