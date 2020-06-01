@@ -22,7 +22,7 @@ jobs:
             [1]: https://github.com/ksrikanthreddy/create-pull-request
           labels: report, automated pr
           draft: false
-          branch: example-patches
+          branch: automatic
           request-to-parent: false
       - name: Check outputs
         run: |
