@@ -1,14 +1,18 @@
 name: Create Pull Request
 on:
   create: 
+    branches:
+      - new
   push:
     branches: 
-      - automatic
+      - new
 jobs:
   createPullRequest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: master
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v2
