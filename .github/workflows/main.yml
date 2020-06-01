@@ -15,4 +15,4 @@ jobs:
           ref: master
       - name: Create PR Branch
         run: |
-          curl -X POST -u ksrikanthreddy:${{ secrets.GITHUB_TOKEN }} -i https://api.github.com/repos/ksrikanthreddy/testSwaggerHubAdvanced/pulls -d "{\"title\":\"my_login\",\"body\":\"my_password\",\"head\":\"ksrikanthreddy:swagger\",\"base\":\"master\"}"
+          curl -X POST -u ksrikanthreddy:${{ secrets.GITHUB_TOKEN }} -i https://api.github.com/repos/ksrikanthreddy/testSwaggerHubAdvanced/pulls -d "{\"title\":\"SwaggerHub Changes\",\"body\":\"SwaggerHub Changes\",\"head\":\"ksrikanthreddy:swagger\",\"base\":\"master\"}"
