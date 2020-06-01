@@ -1,5 +1,9 @@
 name: Create Pull Request
-on: push
+on:
+  create: 
+  push:
+    branches: 
+      - automatic
 jobs:
   createPullRequest:
     runs-on: ubuntu-latest
@@ -20,6 +24,7 @@ jobs:
           draft: false
           branch: automatic
           request-to-parent: false
+          base: master
       - name: Check outputs
         run: |
           echo "Pull Request Number - ${{ env.PULL_REQUEST_NUMBER }}"
