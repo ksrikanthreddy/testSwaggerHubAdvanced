@@ -15,10 +15,7 @@ jobs:
           ref: master
       - name: Create PR Branch
         run: |
-          git checkout -b prbrnch
-          git fetch origin master:master
-          git pull origin new
-          git checkout master
+          curl http://www.google.com
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v2
