@@ -15,24 +15,4 @@ jobs:
           ref: master
       - name: Create PR Branch
         run: |
-          curl -X POST https://api.github.com/repos/ksrikanthreddy/testSwaggerHubAdvanced/pulls -d "{\"title\":\"my_login\",\"body\":\"my_password\",\"head\":\"new\",\"base\":\"master\"}"
-      - name: Create Pull Request
-        id: cpr
-        uses: peter-evans/create-pull-request@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: SwaggerHub updates
-          committer: GitHub <noreply@github.com>
-          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-          title: 'SwaggerHub Changes'
-          body: |
-            New SwaggerHub chagnes
-          labels: report, automated pr
-          draft: false
-          request-to-parent: true
-          base: master
-          branch: prbrnch
-      - name: Check outputs
-        run: |
-          echo "Pull Request Number - ${{ env.PULL_REQUEST_NUMBER }}"
-          echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
+          curl -X POST -u ksrikanthreddy:20815787e13cd3d56142196ded93db515a5ac94e -i https://api.github.com/repos/ksrikanthreddy/testSwaggerHubAdvanced/pulls -d "{\"title\":\"my_login\",\"body\":\"my_password\",\"head\":\"ksrikanthreddy:new\",\"base\":\"master\"}"
