@@ -15,8 +15,9 @@ jobs:
           ref: master
       - name: Create PR Branch
         run: |
-          git checkout -b prbrnch
+          git checkout prbrnch
           git fetch origin master:master
+          git pull origin new
           git checkout master
       - name: Create Pull Request
         id: cpr
